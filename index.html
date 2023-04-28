@@ -1,1 +1,7 @@
-Hello Everyone
+#!/bin/bash
+
+if [[ -n 'pgrep httpd' ]]; then
+    sudo service httpd start
+else
+     sudo yum install httpd-y
+fi
